@@ -28,11 +28,13 @@ fetch("https://reqres.in/api/users?page=1").then(function(responseAPI) {
   console.log("J'ai reçu une réponse de l'API", reponseEnJson.data);
   let reponseFinale = reponseEnJson.data;
   console.log('La valeur de ma réponse dans le then : ', reponseFinale);  
- 
+  
   /**
    * INSERT CODE HERE 
    * */ 
-
+  for (const userObj of reponseFinale) {
+    addNewCard(userObj);
+  }
 
 }).catch(function(error) {
   // Le catch permet de récupérer toute erreur produite dans l'enchainement du dessus
