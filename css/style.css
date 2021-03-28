@@ -1,0 +1,43 @@
+html {
+  background-color: #000;
+  font-family: "Nunito", sans-serif;
+}
+html body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 25%;
+  padding-top: 40px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #101010;
+  border-radius: 10px;
+  color: white;
+  min-width: 200px;
+  padding: 12px;
+  margin: 12px;
+  margin-top: 25px;
+}
+.card__image {
+  border-radius: 50%;
+  transform: translate(-22%, -22%);
+}
+.card__text-container {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.card__text__name {
+  color: #33F4FE;
+}
+
+/* bleu 
+33F4FE
+purple
+5036A0 */
